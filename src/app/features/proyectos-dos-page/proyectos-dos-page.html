@@ -1,0 +1,11 @@
+<listado-proyectos
+    listName="Listado Proyectos desde Servico"
+    [proyectos]="proyectosService.proyectos()"
+    [onDeleteProyecto]="proyectosService.dellProyecto.bind(proyectosService)"
+></listado-proyectos>
+
+<p>Aqui deberia estar un componente que agrege al servicio</p>
+<add-proyecto
+    (newProyecto)="proyectosService.addProyecto($event)"
+    (removeProyecto)="proyectosService.dellFirstProyecto()"
+></add-proyecto>

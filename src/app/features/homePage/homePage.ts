@@ -30,5 +30,4 @@ export class HomePage {
     this.conterSignal.set(value);
 
   }
-
 }

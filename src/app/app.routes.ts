@@ -1,6 +1,8 @@
 import { Routes } from '@angular/router';
 import { HomePage } from './features/homePage/homePage';
 import { PerfilPage } from './features/perfilPage/perfilPage';
+import { ProyectosPage } from './features/proyectos-page/proyectos-page';
+import { ProyectosDosPage } from './features/proyectos-dos-page/proyectos-dos-page';
 
 export const routes: Routes = [
     {
@@ -10,6 +12,16 @@ export const routes: Routes = [
     {
         path: "perfil",
         component: PerfilPage
+
+    },
+    {
+        path: "proyectos",
+        component: ProyectosPage
+
+    },
+    {
+        path: "proyectosDos",
+        component: ProyectosDosPage
 
     },
     {
